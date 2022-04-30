@@ -21,5 +21,5 @@ if __name__ == '__main__':
     t3 = cTest3()
 
     print(t1.__test_var__)
-    print(t3._test_var) # protected
+    # print(t3._test_var) # protected
     print(t2.__test_var) # private 변수를 뺏으므로 오류
