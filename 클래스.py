@@ -20,3 +20,27 @@ print(a.a)
 print(b.a)
 print(a.lastname)
 print(b.lastname)
+
+class Parent:
+    a = 'abc'
+    def __init__(self):
+        self.name = 'ah'
+        self.age = 27
+    def ch(self, name):
+        print(Parent.a)
+        return name
+        
+    @staticmethod
+    def check_name(name):
+        print(Parent.a)
+        return name
+
+    
+
+class Child(Parent):
+    pass
+
+parent = Parent()
+child = Child()
+print(child.check_name('check_name'))
+print(child.ch('check_name2'))
